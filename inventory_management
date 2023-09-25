@@ -1,0 +1,23 @@
+### inventory management ###
+### outstanding liability / past due ###
+select rental.rental_id, film.film_id, rental.customer_id,
+    film.rental_rate AS film_rental_rate,
+    rental.return_date IS NULL AS is_unreturned,
+    film.rental_rate AS cost_if_unreturned,
+    (select sum (film.rental_rate)
+     from rental
+     cross join film
+     where rental.return_date is NULL) as total_outstanding_liability
+from rental
+cross join film
+where rental.return_date is NULL;
+
+### past due DVDs ###
+select rental.rental_id, film.film_id,
+    rental.customer_id,
+    film.rental_rate as film_rental_rate,
+    film.rental_rate as cost_if_past_due
+from rental
+join film on rental.inventory_id = film.film_id
+where rental.return_date is not NULL
+    and rental.return_date > rental.return_date + INTERVAL '3 days';
