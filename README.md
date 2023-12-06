@@ -1,10 +1,10 @@
 # DVD_Rental_Analysis
 
 ## Overview
-This repository contains an in-depth analysis of DVD rentals using the Sakila Sample Database. The analysis is performed using SQL queries to gain insights into various aspects of the rental business. Whether you're a data analyst, SQL enthusiast, or simply curious about DVD rentals, this project provides valuable information.
+This repository contains an in-depth analysis of DVD rentals using the Sakila Sample Database. The analysis is performed using SQL queries to gain insights into various aspects of the rental business.
 
 ## About the Sakila Sample Database
-The Sakila Sample Database is a widely-used dataset in the field of database management and data analysis. It is designed to simulate a DVD rental store's data, including customer information, film inventory, rentals, payments, and more. While this data is not based on a real-world DVD rental company, it serves as an excellent educational resource for learning SQL and database techniques.
+The Sakila Sample Database is a widely-used dataset in the field of database management and data analysis. It is designed to simulate a DVD rental store's data, including customer information, film inventory, rentals, payments, and more.
 
 ## Analysis Topics
 In this project, we explore several key aspects of DVD rentals:
